@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-plandefinition",
+  "url": "http://hl7.org/fhir/uv/shorthand/StructureDefinition/cpg-plandefinition",
+  "version": "0.13.0",
+  "name": "CPGPlanDefinition",
+  "title": "CPG PlanDefinition",
+  "status": "active",
+  "description": "Test of CPG Profile in FSH",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/shareableplandefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.identifier",
+        "path": "PlanDefinition.identifier",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.title",
+        "path": "PlanDefinition.title",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.date",
+        "path": "PlanDefinition.date",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.relatedArtifact.display",
+        "path": "PlanDefinition.relatedArtifact.display",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.relatedArtifact.url",
+        "path": "PlanDefinition.relatedArtifact.url",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.library",
+        "path": "PlanDefinition.library",
+        "max": "1"
+      },
+      {
+        "id": "PlanDefinition.action",
+        "path": "PlanDefinition.action",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:strengthOfRecommendation",
+        "path": "PlanDefinition.action.documentation.extension",
+        "sliceName": "strengthOfRecommendation",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:strengthOfRecommendation.url",
+        "path": "PlanDefinition.action.documentation.extension.url",
+        "fixedUri": "strengthOfRecommendation"
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:directionOfRecommendation",
+        "path": "PlanDefinition.action.documentation.extension",
+        "sliceName": "directionOfRecommendation",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:directionOfRecommendation.url",
+        "path": "PlanDefinition.action.documentation.extension.url",
+        "fixedUri": "directionOfRecommendation"
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:qualityOfEvidence",
+        "path": "PlanDefinition.action.documentation.extension",
+        "sliceName": "qualityOfEvidence",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.documentation.extension:qualityOfEvidence.url",
+        "path": "PlanDefinition.action.documentation.extension.url",
+        "fixedUri": "qualityOfEvidence"
+      }
+    ]
+  }
+}
