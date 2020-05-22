@@ -4,7 +4,7 @@ Alias: qualityOfEvidence = http://hl7.org/fhir/StructureDefinition/cqf-qualityOf
 
 Profile:        CPGPlanDefinition
 //Shareable PlanDefinition is the parent 
-Parent:         http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition
+Parent:         http://hl7.org/fhir/StructureDefinition/shareableplandefinition
 Id:             cpg-plandefinition
 Title:          "CPG PlanDefinition"
 Description:    "Test of CPG Profile in FSH"
