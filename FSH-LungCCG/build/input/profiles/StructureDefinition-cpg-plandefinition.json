@@ -82,36 +82,30 @@
         "path": "PlanDefinition.action.documentation.extension",
         "sliceName": "strengthOfRecommendation",
         "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation"
+            ]
+          }
+        ],
         "mustSupport": true
-      },
-      {
-        "id": "PlanDefinition.action.documentation.extension:strengthOfRecommendation.url",
-        "path": "PlanDefinition.action.documentation.extension.url",
-        "fixedUri": "strengthOfRecommendation"
-      },
-      {
-        "id": "PlanDefinition.action.documentation.extension:directionOfRecommendation",
-        "path": "PlanDefinition.action.documentation.extension",
-        "sliceName": "directionOfRecommendation",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "PlanDefinition.action.documentation.extension:directionOfRecommendation.url",
-        "path": "PlanDefinition.action.documentation.extension.url",
-        "fixedUri": "directionOfRecommendation"
       },
       {
         "id": "PlanDefinition.action.documentation.extension:qualityOfEvidence",
         "path": "PlanDefinition.action.documentation.extension",
         "sliceName": "qualityOfEvidence",
         "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence"
+            ]
+          }
+        ],
         "mustSupport": true
-      },
-      {
-        "id": "PlanDefinition.action.documentation.extension:qualityOfEvidence.url",
-        "path": "PlanDefinition.action.documentation.extension.url",
-        "fixedUri": "qualityOfEvidence"
       }
     ]
   }
