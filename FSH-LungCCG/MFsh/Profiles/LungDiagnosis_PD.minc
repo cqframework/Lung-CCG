@@ -1,0 +1,9 @@
+/*
+  //CQF profile-Strength of recommendation profile for documentation element for @Chris or Bryn
+ */
+#macro DocumentationExtensions()
+  * action.documentation.extension contains strengthOfRecommendation 0..1 MS
+  * action.documentation.extension contains directionOfRecommendation 0..1 MS 
+  * action.documentation.extension contains qualityOfEvidence 0..1 MS 
+  * action.participant.role 0..1
+#end
