@@ -1,0 +1,26 @@
+{
+	"watchs": [
+		{
+			"name": "MFSH",
+			"watchPaths": ["MFSH"],
+			"workingDir": ".",
+			"commands": [
+				{
+					"cmdPath": "MFSH.exe",
+					"cmdArgs": "mfsh.json"
+				}
+			]
+		},
+		{
+			"name": "FSH",
+			"watchPaths": ["FSH"],
+			"workingDir": ".",
+			"commands": [
+				{
+					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
+					"cmdArgs": "FSH"
+				}
+			]
+		}
+	]
+}

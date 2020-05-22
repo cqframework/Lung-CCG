@@ -1,0 +1,32 @@
+{
+	"baseInputDir": "MFSH",
+	"baseOutputDir": "FSH",
+	"baseUrl": "http://hl7.org/fhir/uv/shorthand",
+	"mfshPaths": [
+		"MFSH"
+	],
+	"cleanDirs": [
+		{
+			"path": "..\\build\\input\\pagecontent",
+			"filter": "StructureDefinition-*-intro.xml"
+		},
+		{
+			"path": "fsh",
+			"filter": "*.fsh"
+		},
+		{
+			"path": "..\\GraphFiles",
+			"filter": "*.nodeGraph"
+		}
+	],
+	"defines": [
+		{
+			"name": "%GraphDir%",
+			"value": "..\\GraphFiles"
+		},
+		{
+			"name": "%PageContent%",
+			"value": "..\\build\\input\\pagecontent"
+		}
+	]
+}
