@@ -1,4 +1,5 @@
 .vscode
+build
 input-cache/**
 output/**
 temp/**
