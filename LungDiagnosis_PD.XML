@@ -134,7 +134,7 @@
             <type value="Observation"></type>
             <codeFilter>
                <code>
-                  <system value="http://snomed.org"></system>
+                  <system value="http://snomed.info/sct"></system>
                   <code value="16334891000119106"></code>
                   <display value="Low dose computed tomography of chest without contrast (procedure)"></display>
                </code>
